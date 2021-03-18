@@ -1,0 +1,17 @@
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\bin\Debug\Fulgidi_Chat_Client.exe.config
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\bin\Debug\Fulgidi_Chat_Client.exe
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\bin\Debug\Fulgidi_Chat_Client.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.csprojAssemblyReference.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Chat.g.cs
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\MainWindow.g.cs
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\App.g.cs
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client_MarkupCompile.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client_MarkupCompile.lref
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Chat.baml
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\MainWindow.baml
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.g.resources
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.Properties.Resources.resources
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.csproj.GenerateResource.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.csproj.CoreCompileInputs.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.exe
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.pdb

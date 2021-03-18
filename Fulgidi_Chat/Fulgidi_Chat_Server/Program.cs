@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fulgidi_SocketAsync;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace Fulgidi_Chat_Server
     {
         static void Main(string[] args)
         {
+            //creazione del server
+            AsyncSocketServer server = new AsyncSocketServer();
+            server.InizioAscolto();  
         }
     }
 }

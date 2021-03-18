@@ -1,0 +1,7 @@
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\bin\Debug\Fulgidi_Chat_Server.exe.config
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\bin\Debug\Fulgidi_Chat_Server.exe
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\bin\Debug\Fulgidi_Chat_Server.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.csprojAssemblyReference.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.csproj.CoreCompileInputs.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.exe
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.pdb

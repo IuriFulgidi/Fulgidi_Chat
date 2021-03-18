@@ -10,29 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Fulgidi_Chat_Client
 {
     /// <summary>
-    /// Logica di interazione per MainWindow.xaml
+    /// Logica di interazione per Chat.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Chat : Window
     {
-        public MainWindow()
+        public Chat()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            //invio messaggio con credenziali
-
-            //apertura finestra di chat
-            Window chat = new Chat();
-            chat.Show();
-            this.Close();
         }
     }
 }
