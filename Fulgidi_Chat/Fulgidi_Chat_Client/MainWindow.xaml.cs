@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocketAsync;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace Fulgidi_Chat_Client
     /// </summary>
     public partial class MainWindow : Window
     {
+        AsyncSocketClient client;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,10 +29,19 @@ namespace Fulgidi_Chat_Client
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            //creo il client
+            client = new AsyncSocketClient();
+            client.SetServerIPAddress(txtIP.Text);
+            client.SetServerPort(txtPorta.Text);
+
+            //connessione al server
+            client.ConnectToServer();
+
             //invio messaggio con credenziali
+            client.SendMessage(txtNick.Text);
 
             //apertura finestra di chat
-            Window chat = new Chat();
+            Window chat = new Chat(client);
             chat.Show();
             this.Close();
         }

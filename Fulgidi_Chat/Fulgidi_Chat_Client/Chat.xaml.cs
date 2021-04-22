@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocketAsync;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,23 @@ namespace Fulgidi_Chat_Client
     /// </summary>
     public partial class Chat : Window
     {
-        public Chat()
+        AsyncSocketClient client;
+        public Chat(AsyncSocketClient c)
         {
             InitializeComponent();
+            this.client = c;
+            c.OnNewMessage += client_OnNewMessage;
+        }
+
+        private void client_OnNewMessage(object sender, EventArgs e)
+        {
+            lstChat.ItemsSource = client.Msgs;
+            lstChat.Items.Refresh();
+        }
+
+        private void BtnInvia_Click(object sender, RoutedEventArgs e)
+        {
+            client.SendMessage(txtMsg.Text);
         }
     }
 }

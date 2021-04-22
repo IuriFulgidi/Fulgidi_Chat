@@ -13,7 +13,8 @@ namespace Fulgidi_Chat_Server
         {
             //creazione del server
             AsyncSocketServer server = new AsyncSocketServer();
-            server.InizioAscolto();  
+            server.InizioAscolto();
+            Console.ReadLine();
         }
     }
 }

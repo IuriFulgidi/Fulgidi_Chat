@@ -5,3 +5,6 @@ E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.csproj.CoreCompileInputs.cache
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.exe
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\bin\Debug\SocketAsync.dll
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\bin\Debug\SocketAsync.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Server\obj\Debug\Fulgidi_Chat_Server.csproj.CopyComplete
