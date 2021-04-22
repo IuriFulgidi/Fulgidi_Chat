@@ -29,10 +29,30 @@ namespace Fulgidi_Chat_Client
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            string ip = txtIP.Text;
+            string porta = txtPorta.Text;
+            string nick = txtNick.Text;
+
+            //controllo dei dati
+            if (ip == "" || porta == "" || nick == "")
+            {
+                MessageBox.Show("Fornire tutti i dati");
+                return;
+            }
+
             //creo il client
             client = new AsyncSocketClient();
-            client.SetServerIPAddress(txtIP.Text);
-            client.SetServerPort(txtPorta.Text);
+
+            if(!client.SetServerIPAddress(ip))
+            {
+                MessageBox.Show("indirizzo ip non valido");
+                return;
+            }
+            if (!client.SetServerPort(porta))
+            {
+                MessageBox.Show("numero di porta non valido");
+                return;
+            }
 
             //connessione al server
             client.ConnectToServer();
