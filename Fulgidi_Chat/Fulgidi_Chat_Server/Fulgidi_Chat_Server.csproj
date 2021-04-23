@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AsyncServer\AsyncServer\SocketAsync\FulgidiSocketAsyncLib.csproj">
-      <Project>{778f819c-d29d-4690-964f-d7d92a607066}</Project>
-      <Name>FulgidiSocketAsyncLib</Name>
+    <ProjectReference Include="..\Fulgdi_SocketAsyncLib\Fulgidi_SocketAsyncLib.csproj">
+      <Project>{86bdc02f-c0d8-45c8-9e83-c29ef22cbc87}</Project>
+      <Name>Fulgidi_SocketAsyncLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

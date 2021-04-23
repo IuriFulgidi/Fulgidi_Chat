@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Chat" Height="450" Width="565">
     <Grid>
-        <TextBox x:Name="txtMsg" HorizontalAlignment="Left" Height="23" Margin="10,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450"/>
+        <TextBox x:Name="txtMsg" HorizontalAlignment="Left" Height="23" Margin="10,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" KeyUp="txtMsg_KeyUp"/>
         <Button x:Name="BtnInvia" Content="Invia" HorizontalAlignment="Left" Margin="465,386,0,0" VerticalAlignment="Top" Width="82" Height="23" Click="BtnInvia_Click"/>
         <ListBox x:Name="lstChat" HorizontalAlignment="Left" Height="371" Margin="10,10,0,0" VerticalAlignment="Top" Width="537"/>
 

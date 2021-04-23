@@ -38,5 +38,13 @@ namespace Fulgidi_Chat_Client
         {
             client.SendMessage(txtMsg.Text);
         }
+
+        private void txtMsg_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key != System.Windows.Input.Key.Enter) 
+                return;
+
+            client.SendMessage(txtMsg.Text);
+        }
     }
 }

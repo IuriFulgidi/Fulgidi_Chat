@@ -4,3 +4,9 @@ E:\Projects\AsyncServer\AsyncServer\SocketAsync\obj\Debug\Fulgidi_SocketAsyncLib
 E:\Projects\AsyncServer\AsyncServer\SocketAsync\obj\Debug\Fulgidi_SocketAsyncLib.csproj.CoreCompileInputs.cache
 E:\Projects\AsyncServer\AsyncServer\SocketAsync\obj\Debug\SocketAsync.dll
 E:\Projects\AsyncServer\AsyncServer\SocketAsync\obj\Debug\SocketAsync.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\bin\Debug\SocketAsync.dll
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\bin\Debug\SocketAsync.pdb
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\obj\Debug\Fulgidi_SocketAsyncLib.csprojAssemblyReference.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\obj\Debug\Fulgidi_SocketAsyncLib.csproj.CoreCompileInputs.cache
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\obj\Debug\SocketAsync.dll
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgdi_SocketAsyncLib\obj\Debug\SocketAsync.pdb
