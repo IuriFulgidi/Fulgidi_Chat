@@ -14,7 +14,6 @@ namespace SocketAsync
         IPAddress mServerIpAddress;
         int mServerPort;
         TcpClient mClient;
-
         public List<string> Msgs = new List<string>();
 
         public event EventHandler OnNewMessage;
@@ -96,17 +95,25 @@ namespace SocketAsync
                 //ricezione effettiva
                 while (true)
                 {
+                    //numero di bytes in ricezione
                     int nBytes = await reader.ReadAsync(buff, 0, buff.Length);
+
+                    //in caso di disconnessione
                     if (nBytes == 0)
                     {
-                        Console.WriteLine("Disconnesso");
+                        Msgs.Add("Disconnesso dal server");
+                        EventArgs ev = new EventArgs();
+                        OnNewMessageHandler(ev);
                         break;
                     }
+
+                    //creazione stringa del messaggio
                     string recvMessage = new string(buff, 0, nBytes);
 
                     //si aggiunge il messaggio alla lista
                     Msgs.Add(recvMessage);
 
+                    //evento per la gestione del messaggio
                     EventArgs e = new EventArgs();
                     OnNewMessageHandler(e);
                 }

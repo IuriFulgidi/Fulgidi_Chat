@@ -34,7 +34,7 @@ namespace Fulgidi_Chat_Client
             string nick = txtNick.Text;
 
             //controllo dei dati
-            if (ip == "" || porta == "" || nick == "")
+            if (ip == "" || porta == "" || nick == "" || nick== "inserire nickname")
             {
                 MessageBox.Show("Fornire tutti i dati");
                 return;
@@ -64,6 +64,13 @@ namespace Fulgidi_Chat_Client
             Window chat = new Chat(client);
             chat.Show();
             this.Close();
+        }
+
+        private void txtNick_GotFocus(object sender, RoutedEventArgs e)
+        {
+            //placeholder
+            if(txtNick.Text== "inserire nickname")
+                txtNick.Text = "";
         }
     }
 }

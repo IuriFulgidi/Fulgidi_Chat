@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Fulgidi_Chat_Client"
         mc:Ignorable="d"
-        Title="Chat" Height="450" Width="565">
+        Title="Chat" Height="691.334" Width="400.001">
     <Grid>
-        <TextBox x:Name="txtMsg" HorizontalAlignment="Left" Height="23" Margin="10,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" KeyUp="txtMsg_KeyUp"/>
-        <Button x:Name="BtnInvia" Content="Invia" HorizontalAlignment="Left" Margin="465,386,0,0" VerticalAlignment="Top" Width="82" Height="23" Click="BtnInvia_Click"/>
-        <ListBox x:Name="lstChat" HorizontalAlignment="Left" Height="371" Margin="10,10,0,0" VerticalAlignment="Top" Width="537"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="chatbg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBox x:Name="txtMsg" HorizontalAlignment="Left" Height="23" Margin="10,627,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" KeyUp="txtMsg_KeyUp" GotFocus="txtMsg_GotFocus" Text="Scrivi un messaggio" Background="Black" Foreground="White"/>
+        <Button x:Name="BtnInvia" Content="Invia" HorizontalAlignment="Left" Margin="300,627,0,0" VerticalAlignment="Top" Width="82" Height="23" Click="BtnInvia_Click" Background="#FF2E3647" Foreground="White" FontSize="14"/>
+        <ListBox x:Name="lstChat" HorizontalAlignment="Left" Height="612" Margin="10,10,0,0" VerticalAlignment="Top" Width="372" Background="#A0FFFFFF" FontSize="16"/>
 
     </Grid>
 </Window>

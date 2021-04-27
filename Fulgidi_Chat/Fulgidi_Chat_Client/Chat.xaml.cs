@@ -37,6 +37,7 @@ namespace Fulgidi_Chat_Client
         private void BtnInvia_Click(object sender, RoutedEventArgs e)
         {
             client.SendMessage(txtMsg.Text);
+            txtMsg.Text = "";
         }
 
         private void txtMsg_KeyUp(object sender, KeyEventArgs e)
@@ -45,6 +46,14 @@ namespace Fulgidi_Chat_Client
                 return;
 
             client.SendMessage(txtMsg.Text);
+            txtMsg.Text = "";
+        }
+
+        private void txtMsg_GotFocus(object sender, RoutedEventArgs e)
+        {
+            //placeholder
+            if (txtMsg.Text == "Scrivi un messaggio")
+                txtMsg.Text = "";
         }
     }
 }

@@ -70,13 +70,14 @@ namespace Fulgidi_SocketAsync
                 //creazione del client e aggiunta alla lista
                 ChatClient chatClient = new ChatClient(client,nick);
                 mClients.Add(chatClient);
+
+                //invio data al client
+                SendToOne(chatClient.Client, dataInizio.ToShortDateString());
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-
-            //invio data al client
 
 
             Console.WriteLine($"Client connessi: {mClients.Count()}, Client appena connesso:{ client.Client.RemoteEndPoint}");
