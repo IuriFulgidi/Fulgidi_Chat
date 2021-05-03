@@ -18,3 +18,5 @@ E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\bin\Debug\SocketAsync.dll
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\bin\Debug\SocketAsync.pdb
 E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Fulgidi_Chat_Client.csproj.CopyComplete
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Info.g.cs
+E:\Projects\Fulgidi_Chat\Fulgidi_Chat\Fulgidi_Chat_Client\obj\Debug\Info.baml

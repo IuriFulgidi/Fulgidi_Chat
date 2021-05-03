@@ -105,11 +105,48 @@ namespace Fulgidi_SocketAsync
                         Console.WriteLine("Client disconnesso.");
                         break;
                     }
-                    string recvMessage = new string(buff,0,nBytes).ToLower();
+                    string recvMessage = new string(buff,0,nBytes);
 
+                    
+                    //creazione del messaggio
                     ChatClient cc = mClients.Where(e => e.Client == client).FirstOrDefault();
                     string risp = $"({DateTime.Now.Hour}:{DateTime.Now.Minute}) {cc.Nick}: {recvMessage}";
-                    SendToAll(risp);
+
+                    //controllo che il messaggio non sia diretto ad un client specifico
+                    if (recvMessage.Contains("@"))
+                    {
+                        //per evitare il crash del server se il messaggio privato è fatto male
+                        try
+                        {
+                            //trovo il nick del ricevente unico
+                            int start = recvMessage.IndexOf('@') + 1;
+                            int finish = recvMessage.IndexOf(' ');
+                            int lenght = finish - start;
+                            string receiverNick = recvMessage.Substring(start, lenght);
+                        
+
+                            //controllo se esista e in caso invio
+                            foreach (var rc in mClients)
+                            {
+                                if (receiverNick == rc.Nick)
+                                {
+                                    //modifica del messaggio
+                                    recvMessage = recvMessage.Substring(finish, recvMessage.Length - finish);
+                                    risp = $"({DateTime.Now.Hour}:{DateTime.Now.Minute})messaggio privato da {cc.Nick} a {rc.Nick}: {recvMessage}";
+
+                                    //invio del messaggio solo a ricevente e mittente
+                                    SendToOne(rc.Client, risp);
+                                    SendToOne(cc.Client, risp);
+                                }
+                            }
+                        }
+                        catch
+                        {
+                            Console.WriteLine("invio messaggio privato non valido");
+                        }
+                    }
+                    else
+                        SendToAll(risp);
                     Console.WriteLine($"Returned bytes: {nBytes}. Messaggio: {recvMessage}");
                 }
             }

@@ -55,5 +55,12 @@ namespace Fulgidi_Chat_Client
             if (txtMsg.Text == "Scrivi un messaggio")
                 txtMsg.Text = "";
         }
+
+        private void BtnInfo_Click(object sender, RoutedEventArgs e)
+        {
+            //apertura finestra di info
+            Window info = new Info();
+            info.Show();
+        }
     }
 }
